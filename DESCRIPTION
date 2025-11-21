@@ -1,0 +1,17 @@
+Package: Homework6Package
+Title: Sparse Numeric Vectors and Operations
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nancy", "Yeung", , role = c("aut", "cre"))
+Description: Provides an S4 class 'sparse_numeric' for representing 
+    numeric vectors in sparse form, storing only non-zero values. 
+    Includes methods for arithmetic operations, mean, norm, 
+    standardization, plotting of non-zero entries, and other utilities 
+    for efficient handling of sparse numeric data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,74 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Homework6Package
+
+<!-- badges: start -->
+[| [R-CMD-check] (https://github.com/mj307/sparsevectors/actions/workflows/R-(MD-check.yaml/badge.svg)](https://github.com/mj307/sparsevectors/actions/workflows/R-CMD-Check.yamLS
+<!-- badges: end -->
+
+The goal of Homework6Package is to provide an efficient S4 class, sparse_numeric, for representing numeric vectors in sparse form. Only non-zero entries are stored, which can save memory and improve performance for large vectors. The package includes methods for:
+
+- Arithmetic operations (+, -, *) on sparse vectors
+
+- Computing mean, norm, and standardize
+
+- Plotting non-zero entries for visual inspection
+
+- Converting between dense (numeric) and sparse representations
+
+## Installation
+
+You can install the development version of Homework6Package like so:
+
+```{r}
+# install.packages("devtools") # if not already installed
+devtools::install_github("0NancyYeung0/Homework6Package")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(Homework6Package)
+
+# Create a dense numeric vector
+
+vec <- c(0, 5, 0, 0, 3, 0, 0, 1)
+
+# Convert to sparse_numeric
+
+sparse_vec <- as(vec, "sparse_numeric")
+sparse_vec
+
+# Compute mean
+
+mean(sparse_vec)
+
+# Compute norm
+
+norm(sparse_vec)
+
+# Standardize
+
+standardize(sparse_vec)
+
+# Plot non-zero values against another sparse vector
+
+vec2 <- c(1, 0, 0, 2, 0, 0, 3, 0)
+sparse_vec2 <- as(vec2, "sparse_numeric")
+plot(sparse_vec, sparse_vec2)
+```
