@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 # Homework6Package
 
 <!-- badges: start -->
-[| [R-CMD-check] (https://github.com/mj307/sparsevectors/actions/workflows/R-(MD-check.yaml/badge.svg)](https://github.com/mj307/sparsevectors/actions/workflows/R-CMD-Check.yamLS
+[![R-CMD-check](https://github.com/0NancyYeung0/HW6/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/0NancyYeung0/HW6/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of Homework6Package is to provide an efficient S4 class, sparse_numeric, for representing numeric vectors in sparse form. Only non-zero entries are stored, which can save memory and improve performance for large vectors. The package includes methods for:
